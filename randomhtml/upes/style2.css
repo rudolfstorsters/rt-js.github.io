@@ -1,0 +1,156 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+h1 {
+    color: gray;
+    font-size: 40px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	margin:0;
+}
+#page1{background-color:white;}
+#page2{background-image: url('images/daugava.jpg');background-repeat: no-repeat;background-attachment: fixed; background-size: cover;}
+#page3{background-image: url('images/gauja.jpg');background-repeat: no-repeat;background-attachment: fixed; background-size: cover;}
+#page4{background-image: url('images/get.gif');background-attachment: fixed; }
+hr{ display:block;
+border: 2px solid black;
+	}
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width:100%;
+}
+/* Lapas galva */
+.header {
+  padding: 20px;
+  text-align: center;
+}
+.rivert{
+	font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size: 20px; 
+	color: blue;
+	padding: 0px 8px;
+}
+
+/* izvēlne */
+.topnav {
+	background-color: #333; 
+}
+.rivernav a{
+	
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.tabula{
+	max-height:130px;
+	min-height:130px;
+}
+
+/* Izvēlnes noformējums */
+.topnav a {
+  display: block; 
+  color: #f2f2f2;
+  font-size: 30px;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.nav{
+	width: 30px;
+	float: right;
+}
+/*  */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+  
+}
+.menur {
+float: left;
+  width: 50%;
+  padding-left: 10px;
+  }
+.menub {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  background-color: #393737;
+}
+.bottom_img {
+float: left;
+  width: 33.33%;
+  text-align: center;
+}
+
+
+
+
+/* !!! 3 kolonnnas !!! */
+.column_l {
+  float: left;
+  width: 24.99%;
+  padding: 15px;
+}
+.column_mid{
+  float: left;
+  width: 50%;
+  /* padding: 15px; */
+}
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Stila notīrīšana pēc kolonnām! */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsīvais dizaina elements */
+
+  
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+  .column_l {
+    width: 100%;
+  }
+  .column_mid {
+	  float: none;
+    width: 100%;
+  }
+  .menub, .bottom_img {
+float: none;
+  width: 100%;
+  padding: 2px 8px !important;
+  
+}
+.rivert{
+	margin: 0px 8px;
+	padding: 0px 8px !important;
+}
+  hr {
+    display: none;
+  }
+  div.lost {
+    display: none;
+  }
+  .tabula{
+  max-height:none;}
+   .topnav  {
+    float: none;
+    width: 100%; 
+  }
+}

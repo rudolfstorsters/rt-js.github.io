@@ -1,0 +1,774 @@
+.noIdeaMode * {
+    background: #000 !important;
+    color: #0f0 !important;
+    outline: solid #f00 1px !important;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #323639;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    width: 375px;
+    overflow: none;
+    min-width: 375px;
+}
+
+nav {
+    overflow: hidden;
+    background-color: #202124;
+    z-index: 99;
+    width: 100vw;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: fixed;
+    min-width: 375px;
+}
+
+nav a {
+    display: -ms-grid;
+    display: grid;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 35px;
+}
+
+nav a:first-child {
+    height: 60px;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: #009afe;
+}
+
+.imageContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: url("resources/latvijas-upes1.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height: 150px;
+    min-width: 100vw;
+    position: relative;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.columnCenter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    color: white;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+}
+
+.rowCenter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    position: relative;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100vw;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+section {
+    background-color: #323639;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    width: 100vw;
+    min-width: 375px;
+}
+
+aside {
+    position: relative;
+    margin-top: 129px;
+    height: 200px;
+    width: 100vw;
+    background-color: #323639;
+    min-width: 375px;
+}
+
+.itemContainer {
+    margin: 3%;
+    min-width: 320px;
+    position: relative;
+    height:320px;
+   
+    overflow: none;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+.title {
+    line-height: 42.19px;
+    font-weight: 500;
+    font-size: 36px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: white;
+    z-index:3 ;
+}
+
+.titleText {
+    font-weight: 500;
+    line-height: 28.13px;
+    font-size: 24px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+.logo {
+    background-image: url("resources/jatvijas-upes.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    min-height: 38.75px;
+    width: 60.07px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: block;
+}
+
+.logoContainer {
+    width: 100%;
+    height: 60px;
+}
+
+h2 {
+    z-index: 3;
+    color: black;
+    font-weight: 800;
+}
+
+h4 {
+    z-index: 3;
+}
+
+footer {
+    background-color: #000;
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    height: 88px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 100vw;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+   
+    min-width: 375px;
+}
+
+#myBtn {
+    background-image: url("resources/home.png");
+    background-size: 100% 100%;
+    min-width: 30px;
+    min-height: 30px;
+    -ms-grid-column-align: center;
+    justify-self: center;
+    align-self: center;
+    margin: 10px 0 0 0;
+}
+
+.footerStyle {
+    padding: none;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+.gauja {
+    background-image: url("resources/gauja.jpg") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+}
+
+.daugava {
+    background-image: url("resources/daugava.jpg")!important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 50%;
+}
+
+.clip-path{
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.lielupe {
+    background-image: url("resources/lielupe-jura.jpg") !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    position: relative; 
+    border-radius: 50%;
+    
+}
+
+.weather {
+    position: relative;
+    animation: lightning 4s ease-out infinite;
+}
+   .weather :before {
+      content: "";
+      position: absolute;
+      width: 98%;
+      height: 79%;
+      z-index: 1;
+      background-image: url("https://assets.codepen.io/1984204/rain.png");
+      opacity: 0.4;
+      animation: rain 0.5s linear infinite;
+      border-radius: 50%;
+      left: 0px;
+      bottom: 0px;
+      
+    
+  }
+  @keyframes lightning {
+    0% {
+      filter: brightness(1);
+    }
+    86% {
+      filter: brightness(1);
+    }
+    87.75% {
+      filter: brightness(1.8);
+    }
+    89.5% {
+      filter: brightness(1.3);
+    }
+    93% {
+      filter: brightness(3);
+    }
+    100% {
+      filter: brightness(1);
+    }
+  }
+  
+  @keyframes rain {
+    0% {
+      background-position: 10% 100%
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+
+
+
+
+
+
+/*          TABLET     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+@media only screen and (min-width: 768px) {
+
+    .gauja {
+        border-radius: 5px;
+        background-image: url("resources/gnp.jpg");
+    }
+    .lielupe{
+        border-radius: 5px;
+        background-image: url("resources/lielupes-krasti.jpg");
+    }
+
+    .daugava{
+        border-radius: 5px;
+        background-image: url("resources/daugavas-loki.jpg");
+
+        
+    }
+    body {
+        background-color: #282C2F;
+    }
+    .columnCenter {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        width: 100vw;
+    }
+    
+    nav {
+        overflow: hidden;
+        background-color: #202124;
+        z-index: 99;
+        width: 100vw;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        position: fixed;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 60px;
+        min-width: 375px;
+    }
+    nav a {
+        display: -ms-grid;
+        display: grid;
+        color: #ffffff;
+        text-align: center;
+        text-decoration: none;
+        font-size: 17px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 35px;
+        width: 10%;
+        margin: 10px;
+    }
+    nav a:first-child {
+        min-width: 40%;
+        justify-self: start;
+        justify-content: left;
+    }
+    .columnCenter {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+    .logo {
+        background-image: url("resources/jatvijas-upes.svg");
+        background-repeat: repeat;
+        background-size: 100% 100%;
+        min-height: 38.75px;
+        width: 248px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: block;
+    }
+    .imageContainer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background: url("resources/latvijas-upes1.svg");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 400px;
+        min-width: 100vw;
+        position: relative;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+       
+    }
+    aside {
+        position: relative;
+        margin-top: 60px;
+        height: 200px;
+        width: 100vw;
+    }
+    
+    .itemContainer {
+        margin: 1%;
+       border-radius: 0%;
+        position: relative;
+        font-size: 24px;
+        min-width: 30%;
+        margin-bottom: 100px;
+    }
+    
+    .formTextDecoration {
+        font-size: 36px;
+        color: white;
+    }
+    footer {
+        background-color: #000;
+        color: white;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        height: 88px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        width: 100vw;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+       
+    }
+    #myBtn {
+        background-image: url("resources/home.png");
+        background-size: cover;
+        min-width: 30px;
+        min-height: 30px;
+        -ms-grid-column-align: center;
+        justify-self: center;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        float: right;
+    }
+    .footerStyle {
+        width: 50%;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+
+    .title{
+        z-index: 3;
+        font-size: 50px;
+       
+    }
+}
+
+/*          WINDOW     @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@*/
+
+@media only screen and (min-width: 1366px) {
+
+
+
+    
+
+    .gauja {
+        border-radius: 50%;
+        background-image: url("resources/gauja.jpg");
+        animation-name: spin;
+        animation-duration: 6000ms;
+        animation-iteration-count: infinite;
+
+
+    }
+
+    @keyframes spin{
+        0%{ transform: rotate(0)
+        }
+        100%{transform: rotate(360deg);
+        }
+    }
+
+    .lielupe{
+        border-radius: 50%;
+        background-image: url("resources/lielupe-jura.jpg");
+    }
+
+    .daugava{
+        border-radius: 50%;
+        background-image: url("resources/daugava.jpg");
+        align-items: center;
+        justify-content: center;
+        animation-name: rotate;
+        animation-duration: 5000ms;
+        animation-iteration-count: infinite;
+        animation-timing-function: unset;
+
+    }
+
+
+    body {
+        background-color: #282C2F;
+        min-width: 100vw;
+    }
+    nav {
+        overflow: hidden;
+        background-color: #202124;
+        z-index: 99;
+        width: 100vw;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        position: fixed;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        height: 100px;
+    }
+    
+    nav a {
+        display: -ms-grid;
+        display: grid;
+        color: #ffffff;
+        text-align: center;
+        text-decoration: none;
+        font-size: 17px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 50%;
+        width: 10%;
+    }
+    nav a:first-child {
+        min-width: 60%;
+        justify-self: center;
+        justify-content: center;
+    }
+    .columnCenter {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+    }
+    .logo {
+        background-image: url("resources/jatvijas-upes.svg");
+        background-repeat: no-repeat;
+        min-height: 42px;
+        min-width: 248.8px;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: block;
+    }
+    .imageContainer {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        background: url("resources/latvijas-upes1.svg");
+        
+        background-size: 100% 100%;
+        height: 200px;
+        min-width: 100vw;
+        position: relative;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        top: 0;
+    }
+   
+    aside {
+        position: relative;
+        margin-top: 100px;
+        height: 200px;
+        width: 100vw;
+    }
+    
+    .formTextDecoration {
+        font-size: 36px;
+        color: white;
+    }
+    .itemContainer {
+        margin: 0 3%;
+        min-width: 323px;
+        position: relative;
+        margin-bottom: 100px;
+       
+    }
+
+    .itemContainer > .lielupe {
+
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff !important;
+        text-align: center;
+
+    }
+
+    @keyframes rotate {
+        0%{
+            transform: perspective(300px) rotateY(0);
+        }
+        100%{
+            transform: perspective(300px) rotateY(360deg);
+        }
+    }
+
+   
+    footer {
+        background-color: #000;
+        color: white;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-flex: 1;
+        -ms-flex: 1;
+        flex: 2;
+        height: 88px;
+        text-align: left;
+    }
+    #myBtn {
+        background-image: url("resources/home.png");
+        background-size: 100% 100%;
+        min-width: 30px;
+        min-height: 30px;
+        right: 100px;
+    }
+    .footerStyle {
+        width: 50%;
+        padding-right: 100px;
+        padding-left: 100px;
+    }
+}
